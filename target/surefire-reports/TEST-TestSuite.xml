@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="17.578" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API/target/test-classes:/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API/target/classes:/Users/varsha.tiwari/.m2/repository/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/org/codehaus/groovy/groovy/3.0.2/groovy-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.2/groovy-xml-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/varsha.tiwari/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/varsha.tiwari/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/varsha.tiwari/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/varsha.tiwari/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/varsha.tiwari/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/json-path/4.3.0/json-path-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/org/codehaus/groovy/groovy-json/3.0.2/groovy-json-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/rest-assured-common/4.3.0/rest-assured-common-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/xml-path/4.3.0/xml-path-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/varsha.tiwari/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/varsha.tiwari/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/varsha.tiwari/.m2/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar:/Users/varsha.tiwari/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar:/Users/varsha.tiwari/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/varsha.tiwari/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/varsha.tiwari/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar:/Users/varsha.tiwari/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar:/Users/varsha.tiwari/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/varsha.tiwari/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/varsha.tiwari/.m2/repository/org/testng/testng/7.0.0/testng-7.0.0.jar:/Users/varsha.tiwari/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/aventstack/extentreports/5.0.0/extentreports-5.0.0.jar:/Users/varsha.tiwari/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/varsha.tiwari/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/varsha.tiwari/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/varsha.tiwari/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/varsha.tiwari/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.12.3/jackson-jaxrs-json-provider-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.12.3/jackson-jaxrs-base-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.3/jackson-module-jaxb-annotations-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/varsha.tiwari/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/varsha.tiwari/.m2/repository/com/github/javafaker/javafaker/0.15/javafaker-0.15.jar:/Users/varsha.tiwari/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/varsha.tiwari/.m2/repository/org/yaml/snakeyaml/1.20/snakeyaml-1.20-android.jar:/Users/varsha.tiwari/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/varsha.tiwari/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/json-schema-validator/4.3.3/json-schema-validator-4.3.3.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/varsha.tiwari/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/varsha.tiwari/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/varsha.tiwari/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/varsha.tiwari/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/varsha.tiwari/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/varsha.tiwari/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/varsha.tiwari/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/varsha.tiwari/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/varsha.tiwari/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/varsha.tiwari/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/varsha.tiwari/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API/target/surefire/surefirebooter-20230220161821104_3.jar /Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API/target/surefire 2023-02-20T16-18-20_699-jvmRun1 surefire-20230220161821104_1tmp surefire_0-20230220161821104_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API/target/test-classes:/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API/target/classes:/Users/varsha.tiwari/.m2/repository/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/org/codehaus/groovy/groovy/3.0.2/groovy-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.2/groovy-xml-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/varsha.tiwari/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/varsha.tiwari/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/varsha.tiwari/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/varsha.tiwari/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/varsha.tiwari/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/json-path/4.3.0/json-path-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/org/codehaus/groovy/groovy-json/3.0.2/groovy-json-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/rest-assured-common/4.3.0/rest-assured-common-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/xml-path/4.3.0/xml-path-4.3.0.jar:/Users/varsha.tiwari/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/varsha.tiwari/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/varsha.tiwari/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/varsha.tiwari/.m2/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar:/Users/varsha.tiwari/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar:/Users/varsha.tiwari/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/varsha.tiwari/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/varsha.tiwari/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar:/Users/varsha.tiwari/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar:/Users/varsha.tiwari/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/varsha.tiwari/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/varsha.tiwari/.m2/repository/org/testng/testng/7.0.0/testng-7.0.0.jar:/Users/varsha.tiwari/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/aventstack/extentreports/5.0.0/extentreports-5.0.0.jar:/Users/varsha.tiwari/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/varsha.tiwari/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/varsha.tiwari/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/varsha.tiwari/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/varsha.tiwari/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.12.3/jackson-jaxrs-json-provider-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.12.3/jackson-jaxrs-base-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.3/jackson-module-jaxb-annotations-2.12.3.jar:/Users/varsha.tiwari/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/varsha.tiwari/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/varsha.tiwari/.m2/repository/com/github/javafaker/javafaker/0.15/javafaker-0.15.jar:/Users/varsha.tiwari/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/varsha.tiwari/.m2/repository/org/yaml/snakeyaml/1.20/snakeyaml-1.20-android.jar:/Users/varsha.tiwari/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/varsha.tiwari/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/varsha.tiwari/.m2/repository/io/rest-assured/json-schema-validator/4.3.3/json-schema-validator-4.3.3.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/varsha.tiwari/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/varsha.tiwari/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/varsha.tiwari/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/varsha.tiwari/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/varsha.tiwari/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/varsha.tiwari/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/varsha.tiwari/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/varsha.tiwari/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/varsha.tiwari/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/varsha.tiwari/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/varsha.tiwari/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/varsha.tiwari/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/varsha.tiwari/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/varsha.tiwari"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API/target/surefire/surefirebooter-20230220161821104_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.14+8-LTS-263"/>
+    <property name="user.name" value="varsha.tiwari"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/varsha.tiwari/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/kv/mygwrvks35jgpf1197x9zc480000gr/T/"/>
+    <property name="java.version" value="11.0.14"/>
+    <property name="user.dir" value="/Users/varsha.tiwari/Documents/Appium_Resources/ExBankingApp_API"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/varsha.tiwari/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.14+8-LTS-263"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Verify_UserCreationTest_With_Valid_User_Data[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, POST, {Content-Type=application/json}, {}, {}, 201, {&#10;    &quot;account_number&quot;: &quot;SBI123&quot;,&#10;    &quot;account_holder_name&quot;: &quot;varsha&quot;,&#10;    &quot;account_type&quot;: &quot;savings&quot;,&#10;    &quot;account_holder_type&quot;: &quot;adult&quot;,&#10;    &quot;country&quot;: &quot;India&quot;,&#10;    &quot;default_currency&quot;: &quot;Rupees&quot;,&#10;    &quot;gender&quot;: &quot;Female&quot;,&#10;    &quot;dob&quot;: &quot;01-08-03&quot;,&#10;    &quot;address&quot;: &quot;St josp&quot;,&#10;    &quot;contact_number&quot;: &quot;+919644871000&quot;,&#10;    &quot;email_address&quot;: &quot;varsha@gmail.com&quot;,&#10;    &quot;is_active&quot;: true,&#10;    &quot;total_balance&quot;: 0,&#10;    &quot;created_at&quot;: 1334354&#10;}](1)" classname="frameworkTests.UserCreationTest" time="3.57"/>
+  <testcase name="Verify_UserCreationTest_With_Multiple_Invalid_Payload_Format[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, POST, {Content-Type=application/json, x-mock-response-code=400}, {}, {}, 400, {&#10;    &quot;account_number&quot;: &quot;&quot;,&#10;    &quot;account_holder_name&quot;: 123,&#10;    &quot;account_type&quot;: &quot;savings&quot;,&#10;    &quot;account_holder_type&quot;: &quot;adult&quot;,&#10;    &quot;country&quot;: &quot;India&quot;,&#10;    &quot;default_currency&quot;: &quot;Rupees&quot;,&#10;    &quot;gender&quot;: &quot;Male&quot;,&#10;    &quot;dob&quot;: &quot;01-08-03&quot;,&#10;    &quot;address&quot;: &quot;jbp, India&quot;,&#10;    &quot;contact_number&quot;: &quot;+919644321244&quot;,&#10;    &quot;email_address&quot;: &quot;aditya@gmail.com&quot;,&#10;    &quot;is_active&quot;: true,&#10;    &quot;total_balance&quot;: -123,&#10;    &quot;created_at&quot;: &quot;&quot;&#10;}](1)" classname="frameworkTests.UserCreationTest" time="1.455"/>
+  <testcase name="Verify_GetUserDetailsTest_For_All_Users[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Content-Type=application/json}, {}, {}, 200, NA](1)" classname="frameworkTests.GetAccountDetailsTest" time="3.571"/>
+  <testcase name="Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Name_And_Number[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Accept=application/json}, {account_number=&quot;SBI987&quot;, account_holder_name=&quot;Jonathan Reddy&quot;}, {}, 200, NA](1)" classname="frameworkTests.GetAccountDetailsTest" time="1.789"/>
+  <testcase name="Verify_GetUserDetailsTest_For_Specific_Users_With_Empty_Account_Number[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Accept=application/json}, {account_number=&quot;&quot;}, {}, 400, NA](1)" classname="frameworkTests.GetAccountDetailsTest" time="0.002"/>
+  <testcase name="Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Number[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Accept=application/json}, {account_number=&quot;SBI191&quot;}, {}, 200, NA](1)" classname="frameworkTests.GetAccountDetailsTest" time="1.639"/>
+  <testcase name="Verify_DepositTest_Add_Amount_to_InValid_Account[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/deposit, POST, {Content-Type=application/json}, {}, {invalid_account_id=SBI987}, 404, {&#10;    &quot;account_number&quot;: &quot;SBI987&quot;,&#10;    &quot;account_holder_name&quot;: &quot;test user&quot;,&#10;    &quot;amount_to_deposit&quot;: 5000,&#10;    &quot;mode_of_transfer&quot;: &quot;NEFT&quot;&#10;}](1)" classname="frameworkTests.DepositAmountTest" time="1.614">
+    <system-out><![CDATA[{
+    "status": "Failure",
+    "errors": [
+        {
+            "message": "Account details not found"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_DepositTest_Add_Invalid_Amount[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/deposit, POST, {Content-Type=application/json}, {}, {invalid_account_id=SBI990}, 400, {&#10;    &quot;account_number&quot;: &quot;SBI990&quot;,&#10;    &quot;account_holder_name&quot;: &quot;test user&quot;,&#10;    &quot;amount_to_deposit&quot;: -500,&#10;    &quot;mode_of_transfer&quot;: &quot;NEFT&quot;&#10;}](1)" classname="frameworkTests.DepositAmountTest" time="1.545">
+    <system-out><![CDATA[{
+    "status": "Failure",
+    "errors": [
+        {
+            "message": "Invalid amount to be credited."
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_DepositTest_Add_Amount_to_Valid_Account[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/deposit, POST, {Content-Type=application/json, Accept=application/json}, {}, {valid_account_id=SBI191}, 201, {&#10;    &quot;account_number&quot;: &quot;SBI191&quot;,&#10;    &quot;account_holder_name&quot;: &quot;varsha tiwari&quot;,&#10;    &quot;amount_to_deposit&quot;: 5000,&#10;    &quot;mode_of_transfer&quot;: &quot;net banking&quot;&#10;}](1)" classname="frameworkTests.DepositAmountTest" time="1.558">
+    <system-out><![CDATA[{
+    "status": "Success",
+    "message": "Account SBI191 credited by 5000 at time:2023-02-20T10:48:33.073Z"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_WithdrawTest_Withdraw_From_Invalid_Account[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/withdraw, POST, {Content-Type=application/json}, {}, {invalid_account_id=SBI987}, 422, {&#10;    &quot;account_number&quot;: &quot;SBI987&quot;,&#10;    &quot;account_holder_name&quot;: &quot;Ross Paul&quot;,&#10;     &quot;amount_to_withdraw&quot;: 5000&#10;}](1)" classname="frameworkTests.MoneyWithdrawTest" time="1.588">
+    <system-out><![CDATA[{
+    "status": "Failure",
+    "errors": [
+        {
+            "message": "Account details not found."
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_WithdrawTest_Withdraw_Invalid_Amount_From_Valid_Account[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/withdraw, POST, {Content-Type=application/json}, {}, {valid_account_id=SBI123}, 422, {&#10;    &quot;account_number&quot;: &quot;SBI123&quot;,&#10;    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,&#10;    &quot;amount_to_withdraw&quot;: 30000&#10;}](1)" classname="frameworkTests.MoneyWithdrawTest" time="1.594">
+    <system-out><![CDATA[{
+    "status": "Failure",
+    "errors": [
+        {
+            "message": "Insufficient Account Balance."
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_WithdrawTest_Withdraw_Valid_Amount_From_Valid_Account[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/withdraw, POST, {Content-Type=application/json}, {}, {valid_account_id=SBI191}, 200, {&#10;    &quot;account_number&quot;: &quot;SBI191&quot;,&#10;    &quot;account_holder_name&quot;: &quot;Jonathan Reddy&quot;,&#10;   &quot;amount_to_withdraw&quot;: 5000&#10;}](1)" classname="frameworkTests.MoneyWithdrawTest" time="1.558"/>
+  <testcase name="Verify_TransferAmountTest_Send_Invalid_Amount[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}, POST, {Content-Type=application/json}, {}, {transfer_account_id=SBI123, receiver_account_id=SBI191}, 422, {&#10;    &quot;account_number&quot;: &quot;SBI123&quot;,&#10;    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,&#10;    &quot;transfer_account_number&quot;: &quot;SBI191&quot;,&#10;    &quot;transfer_account_holder_name&quot;: &quot;Jonathan Reddy&quot;,&#10;    &quot;amount_to_transfer&quot;: 30000,&#10;    &quot;mode_of_transfer&quot;: &quot;NEFT&quot;&#10;}](1)" classname="frameworkTests.TransferMoneyTest" time="1.554">
+    <system-out><![CDATA[{
+    "status": "Failure",
+    "errors": [
+        {
+            "message": "Insufficient balance."
+        }
+    ]
+}
+{
+    "status": "Success",
+    "message": "Account SBI191 withdrawn by 5000 at time:2023-02-20T10:48:36.319Z"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_TransferAmountTest_Send_Money_To_Valid_Account[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}, POST, {Content-Type=application/json}, {}, {transfer_account_id=SBI123, receiver_account_id=SBI990}, 200, {&#10;    &quot;account_number&quot;: &quot;SBI123&quot;,&#10;    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,&#10;    &quot;transfer_account_number&quot;: &quot;SBI990&quot;,&#10;    &quot;transfer_account_holder_name&quot;: &quot;John ankins&quot;,&#10;    &quot;amount_to_transfer&quot;: 5000,&#10;    &quot;mode_of_transfer&quot;: &quot;net banking&quot;&#10;}](1)" classname="frameworkTests.TransferMoneyTest" time="1.417">
+    <system-out><![CDATA[{
+    "status": "Success",
+    "message": "Account  is debited for 5000  at time:2023-02-20T10:48:37.767Z"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Verify_TransferAmountTest_Send_Money_To_Invalid_Account[&#10;https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}, POST, {Content-Type=application/json}, {}, {transfer_account_id=SBI123, receiver_account_id=SBI987}, 422, {&#10;    &quot;account_number&quot;: &quot;SBI123&quot;,&#10;    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,&#10;    &quot;transfer_account_number&quot;: &quot;SBI987&quot;,&#10;    &quot;transfer_account_holder_name&quot;: &quot;Ross Paul&quot;,&#10;    &quot;amount_to_transfer&quot;: 5000,&#10;    &quot;mode_of_transfer&quot;: &quot;net banking&quot;&#10;}](1)" classname="frameworkTests.TransferMoneyTest" time="0.008">
+    <system-out><![CDATA[{
+    "status": "Failure",
+    "errors": [
+        {
+            "message": "Transfer account details are not correct. Please validate."
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+</testsuite>

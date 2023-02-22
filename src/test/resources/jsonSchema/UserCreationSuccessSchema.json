@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "account_number": {
+          "type": "string"
+        },
+        "account_holder_name": {
+          "type": "string"
+        },
+        "is_active": {
+          "type": "string"
+        },
+        "total_balance": {
+          "type": "string"
+        },
+        "account_holder_type": {
+          "type": "string"
+        },
+        "dob": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "default_currency": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "account_number",
+        "account_holder_name",
+        "is_active",
+        "total_balance",
+        "account_holder_type",
+        "dob",
+        "country",
+        "default_currency",
+        "gender"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "content"
+  ]
+}

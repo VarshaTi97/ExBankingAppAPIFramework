@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test" preserve-order="true" parallel="methods" thread-count="2">
+        <classes>
+            <class name="frameworkTests.UserCreationTest"/>
+            <class name="frameworkTests.GetAccountDetailsTest"/>
+            <class name="frameworkTests.DepositAmountTest"></class>
+            <class name="frameworkTests.MoneyWithdrawTest"></class>
+            <class name="frameworkTests.TransferMoneyTest"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,493</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">frameworkTests.DepositAmountTest</td><td><a href="#m0">Verify_DepositTest_Add_Amount_to_InValid_Account</a></td><td rowspan="1">1676890109541</td><td rowspan="1">1610</td></tr><tr class="passedeven"><td><a href="#m1">Verify_DepositTest_Add_Amount_to_Valid_Account</a></td><td rowspan="1">1676890111200</td><td rowspan="1">1569</td></tr><tr class="passedeven"><td><a href="#m2">Verify_DepositTest_Add_Invalid_Amount</a></td><td rowspan="1">1676890111216</td><td rowspan="1">1542</td></tr><tr class="passedodd"><td rowspan="4">frameworkTests.GetAccountDetailsTest</td><td><a href="#m3">Verify_GetUserDetailsTest_For_All_Users</a></td><td rowspan="1">1676890104063</td><td rowspan="1">3573</td></tr><tr class="passedodd"><td><a href="#m4">Verify_GetUserDetailsTest_For_Specific_Users_With_Empty_Account_Number</a></td><td rowspan="1">1676890107681</td><td rowspan="1">1825</td></tr><tr class="passedodd"><td><a href="#m5">Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Name_And_Number</a></td><td rowspan="1">1676890107681</td><td rowspan="1">1788</td></tr><tr class="passedodd"><td><a href="#m6">Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Number</a></td><td rowspan="1">1676890109503</td><td rowspan="1">1678</td></tr><tr class="passedeven"><td rowspan="3">frameworkTests.MoneyWithdrawTest</td><td><a href="#m7">Verify_WithdrawTest_Withdraw_From_Invalid_Account</a></td><td rowspan="1">1676890112802</td><td rowspan="1">1592</td></tr><tr class="passedeven"><td><a href="#m8">Verify_WithdrawTest_Withdraw_Invalid_Amount_From_Valid_Account</a></td><td rowspan="1">1676890112807</td><td rowspan="1">1593</td></tr><tr class="passedeven"><td><a href="#m9">Verify_WithdrawTest_Withdraw_Valid_Amount_From_Valid_Account</a></td><td rowspan="1">1676890114446</td><td rowspan="1">1561</td></tr><tr class="passedodd"><td rowspan="3">frameworkTests.TransferMoneyTest</td><td><a href="#m10">Verify_TransferAmountTest_Send_Invalid_Amount</a></td><td rowspan="1">1676890114449</td><td rowspan="1">1554</td></tr><tr class="passedodd"><td><a href="#m11">Verify_TransferAmountTest_Send_Money_To_Invalid_Account</a></td><td rowspan="1">1676890116041</td><td rowspan="1">1454</td></tr><tr class="passedodd"><td><a href="#m12">Verify_TransferAmountTest_Send_Money_To_Valid_Account</a></td><td rowspan="1">1676890116041</td><td rowspan="1">1415</td></tr><tr class="passedeven"><td rowspan="2">frameworkTests.UserCreationTest</td><td><a href="#m13">Verify_UserCreationTest_With_Multiple_Invalid_Payload_Format</a></td><td rowspan="1">1676890117488</td><td rowspan="1">1455</td></tr><tr class="passedeven"><td><a href="#m14">Verify_UserCreationTest_With_Valid_User_Data</a></td><td rowspan="1">1676890104063</td><td rowspan="1">3569</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">frameworkTests.DepositAmountTest#Verify_DepositTest_Add_Amount_to_InValid_Account</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/deposit</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{invalid_account_id=SBI987}</td><td>404</td><td>{
+    &quot;account_number&quot;: &quot;SBI987&quot;,
+    &quot;account_holder_name&quot;: &quot;test user&quot;,
+    &quot;amount_to_deposit&quot;: 5000,
+    &quot;mode_of_transfer&quot;: &quot;NEFT&quot;
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">frameworkTests.DepositAmountTest#Verify_DepositTest_Add_Amount_to_Valid_Account</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/deposit</td><td>POST</td><td>{Content-Type=application/json, Accept=application/json}</td><td>{}</td><td>{valid_account_id=SBI191}</td><td>201</td><td>{
+    &quot;account_number&quot;: &quot;SBI191&quot;,
+    &quot;account_holder_name&quot;: &quot;varsha tiwari&quot;,
+    &quot;amount_to_deposit&quot;: 5000,
+    &quot;mode_of_transfer&quot;: &quot;net banking&quot;
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">frameworkTests.DepositAmountTest#Verify_DepositTest_Add_Invalid_Amount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/deposit</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{invalid_account_id=SBI990}</td><td>400</td><td>{
+    &quot;account_number&quot;: &quot;SBI990&quot;,
+    &quot;account_holder_name&quot;: &quot;test user&quot;,
+    &quot;amount_to_deposit&quot;: -500,
+    &quot;mode_of_transfer&quot;: &quot;NEFT&quot;
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">frameworkTests.GetAccountDetailsTest#Verify_GetUserDetailsTest_For_All_Users</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts</td><td>GET</td><td>{Content-Type=application/json}</td><td>{}</td><td>{}</td><td>200</td><td>NA</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">frameworkTests.GetAccountDetailsTest#Verify_GetUserDetailsTest_For_Specific_Users_With_Empty_Account_Number</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts</td><td>GET</td><td>{Accept=application/json}</td><td>{account_number=&quot;&quot;}</td><td>{}</td><td>400</td><td>NA</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">frameworkTests.GetAccountDetailsTest#Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Name_And_Number</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts</td><td>GET</td><td>{Accept=application/json}</td><td>{account_number=&quot;SBI987&quot;, account_holder_name=&quot;Jonathan Reddy&quot;}</td><td>{}</td><td>200</td><td>NA</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">frameworkTests.GetAccountDetailsTest#Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Number</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts</td><td>GET</td><td>{Accept=application/json}</td><td>{account_number=&quot;SBI191&quot;}</td><td>{}</td><td>200</td><td>NA</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">frameworkTests.MoneyWithdrawTest#Verify_WithdrawTest_Withdraw_From_Invalid_Account</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/withdraw</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{invalid_account_id=SBI987}</td><td>422</td><td>{
+    &quot;account_number&quot;: &quot;SBI987&quot;,
+    &quot;account_holder_name&quot;: &quot;Ross Paul&quot;,
+     &quot;amount_to_withdraw&quot;: 5000
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">frameworkTests.MoneyWithdrawTest#Verify_WithdrawTest_Withdraw_Invalid_Amount_From_Valid_Account</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/withdraw</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{valid_account_id=SBI123}</td><td>422</td><td>{
+    &quot;account_number&quot;: &quot;SBI123&quot;,
+    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,
+    &quot;amount_to_withdraw&quot;: 30000
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">frameworkTests.MoneyWithdrawTest#Verify_WithdrawTest_Withdraw_Valid_Amount_From_Valid_Account</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/withdraw</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{valid_account_id=SBI191}</td><td>200</td><td>{
+    &quot;account_number&quot;: &quot;SBI191&quot;,
+    &quot;account_holder_name&quot;: &quot;Jonathan Reddy&quot;,
+   &quot;amount_to_withdraw&quot;: 5000
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">frameworkTests.TransferMoneyTest#Verify_TransferAmountTest_Send_Invalid_Amount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{transfer_account_id=SBI123, receiver_account_id=SBI191}</td><td>422</td><td>{
+    &quot;account_number&quot;: &quot;SBI123&quot;,
+    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,
+    &quot;transfer_account_number&quot;: &quot;SBI191&quot;,
+    &quot;transfer_account_holder_name&quot;: &quot;Jonathan Reddy&quot;,
+    &quot;amount_to_transfer&quot;: 30000,
+    &quot;mode_of_transfer&quot;: &quot;NEFT&quot;
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">frameworkTests.TransferMoneyTest#Verify_TransferAmountTest_Send_Money_To_Invalid_Account</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{transfer_account_id=SBI123, receiver_account_id=SBI987}</td><td>422</td><td>{
+    &quot;account_number&quot;: &quot;SBI123&quot;,
+    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,
+    &quot;transfer_account_number&quot;: &quot;SBI987&quot;,
+    &quot;transfer_account_holder_name&quot;: &quot;Ross Paul&quot;,
+    &quot;amount_to_transfer&quot;: 5000,
+    &quot;mode_of_transfer&quot;: &quot;net banking&quot;
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">frameworkTests.TransferMoneyTest#Verify_TransferAmountTest_Send_Money_To_Valid_Account</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{transfer_account_id=SBI123, receiver_account_id=SBI990}</td><td>200</td><td>{
+    &quot;account_number&quot;: &quot;SBI123&quot;,
+    &quot;account_holder_name&quot;: &quot;paul hawkins&quot;,
+    &quot;transfer_account_number&quot;: &quot;SBI990&quot;,
+    &quot;transfer_account_holder_name&quot;: &quot;John ankins&quot;,
+    &quot;amount_to_transfer&quot;: 5000,
+    &quot;mode_of_transfer&quot;: &quot;net banking&quot;
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">frameworkTests.UserCreationTest#Verify_UserCreationTest_With_Multiple_Invalid_Payload_Format</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts</td><td>POST</td><td>{Content-Type=application/json, x-mock-response-code=400}</td><td>{}</td><td>{}</td><td>400</td><td>{
+    &quot;account_number&quot;: &quot;&quot;,
+    &quot;account_holder_name&quot;: 123,
+    &quot;account_type&quot;: &quot;savings&quot;,
+    &quot;account_holder_type&quot;: &quot;adult&quot;,
+    &quot;country&quot;: &quot;India&quot;,
+    &quot;default_currency&quot;: &quot;Rupees&quot;,
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;dob&quot;: &quot;01-08-03&quot;,
+    &quot;address&quot;: &quot;jbp, India&quot;,
+    &quot;contact_number&quot;: &quot;+919644321244&quot;,
+    &quot;email_address&quot;: &quot;aditya@gmail.com&quot;,
+    &quot;is_active&quot;: true,
+    &quot;total_balance&quot;: -123,
+    &quot;created_at&quot;: &quot;&quot;
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">frameworkTests.UserCreationTest#Verify_UserCreationTest_With_Valid_User_Data</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts</td><td>POST</td><td>{Content-Type=application/json}</td><td>{}</td><td>{}</td><td>201</td><td>{
+    &quot;account_number&quot;: &quot;SBI123&quot;,
+    &quot;account_holder_name&quot;: &quot;varsha&quot;,
+    &quot;account_type&quot;: &quot;savings&quot;,
+    &quot;account_holder_type&quot;: &quot;adult&quot;,
+    &quot;country&quot;: &quot;India&quot;,
+    &quot;default_currency&quot;: &quot;Rupees&quot;,
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;dob&quot;: &quot;01-08-03&quot;,
+    &quot;address&quot;: &quot;St josp&quot;,
+    &quot;contact_number&quot;: &quot;+919644871000&quot;,
+    &quot;email_address&quot;: &quot;varsha@gmail.com&quot;,
+    &quot;is_active&quot;: true,
+    &quot;total_balance&quot;: 0,
+    &quot;created_at&quot;: 1334354
+}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

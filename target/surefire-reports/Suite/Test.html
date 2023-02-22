@@ -1,0 +1,247 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 20 16:18:23 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15493 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='frameworkTests.DepositAmountTest.Verify_DepositTest_Add_Amount_to_InValid_Account()'><b>Verify_DepositTest_Add_Amount_to_InValid_Account</b><br>Test class: frameworkTests.DepositAmountTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/deposit, POST, {Content-Type=application/json}, {}, {invalid_account_id=SBI987}, 404, {
+    "account_number": "SBI987",
+    "account_holder_name": "test user",
+    "amount_to_deposit": 5000,
+    "mode_of_transfer": "NEFT"
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.DepositAmountTest@1a66c7e8</td></tr>
+<tr>
+<td title='frameworkTests.DepositAmountTest.Verify_DepositTest_Add_Amount_to_Valid_Account()'><b>Verify_DepositTest_Add_Amount_to_Valid_Account</b><br>Test class: frameworkTests.DepositAmountTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/deposit, POST, {Content-Type=application/json, Accept=application/json}, {}, {valid_account_id=SBI191}, 201, {
+    "account_number": "SBI191",
+    "account_holder_name": "varsha tiwari",
+    "amount_to_deposit": 5000,
+    "mode_of_transfer": "net banking"
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.DepositAmountTest@1a66c7e8</td></tr>
+<tr>
+<td title='frameworkTests.DepositAmountTest.Verify_DepositTest_Add_Invalid_Amount()'><b>Verify_DepositTest_Add_Invalid_Amount</b><br>Test class: frameworkTests.DepositAmountTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/deposit, POST, {Content-Type=application/json}, {}, {invalid_account_id=SBI990}, 400, {
+    "account_number": "SBI990",
+    "account_holder_name": "test user",
+    "amount_to_deposit": -500,
+    "mode_of_transfer": "NEFT"
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.DepositAmountTest@1a66c7e8</td></tr>
+<tr>
+<td title='frameworkTests.GetAccountDetailsTest.Verify_GetUserDetailsTest_For_All_Users()'><b>Verify_GetUserDetailsTest_For_All_Users</b><br>Test class: frameworkTests.GetAccountDetailsTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Content-Type=application/json}, {}, {}, 200, NA</td>
+<td></td>
+<td>3</td>
+<td>frameworkTests.GetAccountDetailsTest@2d5f014f</td></tr>
+<tr>
+<td title='frameworkTests.GetAccountDetailsTest.Verify_GetUserDetailsTest_For_Specific_Users_With_Empty_Account_Number()'><b>Verify_GetUserDetailsTest_For_Specific_Users_With_Empty_Account_Number</b><br>Test class: frameworkTests.GetAccountDetailsTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Accept=application/json}, {account_number=""}, {}, 400, NA</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.GetAccountDetailsTest@2d5f014f</td></tr>
+<tr>
+<td title='frameworkTests.GetAccountDetailsTest.Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Name_And_Number()'><b>Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Name_And_Number</b><br>Test class: frameworkTests.GetAccountDetailsTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Accept=application/json}, {account_number="SBI987", account_holder_name="Jonathan Reddy"}, {}, 200, NA</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.GetAccountDetailsTest@2d5f014f</td></tr>
+<tr>
+<td title='frameworkTests.GetAccountDetailsTest.Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Number()'><b>Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Number</b><br>Test class: frameworkTests.GetAccountDetailsTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, GET, {Accept=application/json}, {account_number="SBI191"}, {}, 200, NA</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.GetAccountDetailsTest@2d5f014f</td></tr>
+<tr>
+<td title='frameworkTests.TransferMoneyTest.Verify_TransferAmountTest_Send_Invalid_Amount()'><b>Verify_TransferAmountTest_Send_Invalid_Amount</b><br>Test class: frameworkTests.TransferMoneyTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}, POST, {Content-Type=application/json}, {}, {transfer_account_id=SBI123, receiver_account_id=SBI191}, 422, {
+    "account_number": "SBI123",
+    "account_holder_name": "paul hawkins",
+    "transfer_account_number": "SBI191",
+    "transfer_account_holder_name": "Jonathan Reddy",
+    "amount_to_transfer": 30000,
+    "mode_of_transfer": "NEFT"
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.TransferMoneyTest@43c5c1af</td></tr>
+<tr>
+<td title='frameworkTests.TransferMoneyTest.Verify_TransferAmountTest_Send_Money_To_Invalid_Account()'><b>Verify_TransferAmountTest_Send_Money_To_Invalid_Account</b><br>Test class: frameworkTests.TransferMoneyTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}, POST, {Content-Type=application/json}, {}, {transfer_account_id=SBI123, receiver_account_id=SBI987}, 422, {
+    "account_number": "SBI123",
+    "account_holder_name": "paul hawkins",
+    "transfer_account_number": "SBI987",
+    "transfer_account_holder_name": "Ross Paul",
+    "amount_to_transfer": 5000,
+    "mode_of_transfer": "net banking"
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.TransferMoneyTest@43c5c1af</td></tr>
+<tr>
+<td title='frameworkTests.TransferMoneyTest.Verify_TransferAmountTest_Send_Money_To_Valid_Account()'><b>Verify_TransferAmountTest_Send_Money_To_Valid_Account</b><br>Test class: frameworkTests.TransferMoneyTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{transfer_account_id}/transfer/{receiver_account_id}, POST, {Content-Type=application/json}, {}, {transfer_account_id=SBI123, receiver_account_id=SBI990}, 200, {
+    "account_number": "SBI123",
+    "account_holder_name": "paul hawkins",
+    "transfer_account_number": "SBI990",
+    "transfer_account_holder_name": "John ankins",
+    "amount_to_transfer": 5000,
+    "mode_of_transfer": "net banking"
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.TransferMoneyTest@43c5c1af</td></tr>
+<tr>
+<td title='frameworkTests.UserCreationTest.Verify_UserCreationTest_With_Multiple_Invalid_Payload_Format()'><b>Verify_UserCreationTest_With_Multiple_Invalid_Payload_Format</b><br>Test class: frameworkTests.UserCreationTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, POST, {Content-Type=application/json, x-mock-response-code=400}, {}, {}, 400, {
+    "account_number": "",
+    "account_holder_name": 123,
+    "account_type": "savings",
+    "account_holder_type": "adult",
+    "country": "India",
+    "default_currency": "Rupees",
+    "gender": "Male",
+    "dob": "01-08-03",
+    "address": "jbp, India",
+    "contact_number": "+919644321244",
+    "email_address": "aditya@gmail.com",
+    "is_active": true,
+    "total_balance": -123,
+    "created_at": ""
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.UserCreationTest@1418e726</td></tr>
+<tr>
+<td title='frameworkTests.UserCreationTest.Verify_UserCreationTest_With_Valid_User_Data()'><b>Verify_UserCreationTest_With_Valid_User_Data</b><br>Test class: frameworkTests.UserCreationTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts, POST, {Content-Type=application/json}, {}, {}, 201, {
+    "account_number": "SBI123",
+    "account_holder_name": "varsha",
+    "account_type": "savings",
+    "account_holder_type": "adult",
+    "country": "India",
+    "default_currency": "Rupees",
+    "gender": "Female",
+    "dob": "01-08-03",
+    "address": "St josp",
+    "contact_number": "+919644871000",
+    "email_address": "varsha@gmail.com",
+    "is_active": true,
+    "total_balance": 0,
+    "created_at": 1334354
+}</td>
+<td></td>
+<td>3</td>
+<td>frameworkTests.UserCreationTest@1418e726</td></tr>
+<tr>
+<td title='frameworkTests.MoneyWithdrawTest.Verify_WithdrawTest_Withdraw_From_Invalid_Account()'><b>Verify_WithdrawTest_Withdraw_From_Invalid_Account</b><br>Test class: frameworkTests.MoneyWithdrawTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{invalid_account_id}/withdraw, POST, {Content-Type=application/json}, {}, {invalid_account_id=SBI987}, 422, {
+    "account_number": "SBI987",
+    "account_holder_name": "Ross Paul",
+     "amount_to_withdraw": 5000
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.MoneyWithdrawTest@10b73548</td></tr>
+<tr>
+<td title='frameworkTests.MoneyWithdrawTest.Verify_WithdrawTest_Withdraw_Invalid_Amount_From_Valid_Account()'><b>Verify_WithdrawTest_Withdraw_Invalid_Amount_From_Valid_Account</b><br>Test class: frameworkTests.MoneyWithdrawTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/withdraw, POST, {Content-Type=application/json}, {}, {valid_account_id=SBI123}, 422, {
+    "account_number": "SBI123",
+    "account_holder_name": "paul hawkins",
+    "amount_to_withdraw": 30000
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.MoneyWithdrawTest@10b73548</td></tr>
+<tr>
+<td title='frameworkTests.MoneyWithdrawTest.Verify_WithdrawTest_Withdraw_Valid_Amount_From_Valid_Account()'><b>Verify_WithdrawTest_Withdraw_Valid_Amount_From_Valid_Account</b><br>Test class: frameworkTests.MoneyWithdrawTest<br>Parameters: 
+https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io/v1/accounts/{valid_account_id}/withdraw, POST, {Content-Type=application/json}, {}, {valid_account_id=SBI191}, 200, {
+    "account_number": "SBI191",
+    "account_holder_name": "Jonathan Reddy",
+   "amount_to_withdraw": 5000
+}</td>
+<td></td>
+<td>1</td>
+<td>frameworkTests.MoneyWithdrawTest@10b73548</td></tr>
+</table><p>
+</body>
+</html>

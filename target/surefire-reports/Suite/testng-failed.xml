@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="frameworkTests.GetAccountDetailsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Verify_GetUserDetailsTest_For_Specific_Users_With_Empty_Account_Number"/>
+          <include name="Verify_GetUserDetailsTest_For_All_Users"/>
+          <include name="Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Number"/>
+          <include name="Verify_GetUserDetailsTest_For_Specific_Users_With_Valid_Account_Name_And_Number"/>
+        </methods>
+      </class> <!-- frameworkTests.GetAccountDetailsTest -->
+      <class name="frameworkTests.UserCreationTest">
+        <methods>
+          <include name="Verify_UserCreationTest_With_Valid_User_Data"/>
+          <include name="tearDown"/>
+          <include name="Verify_UserCreationTest_With_Multiple_Invalid_Payload_Format"/>
+        </methods>
+      </class> <!-- frameworkTests.UserCreationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "account_number": {
+              "type": "string"
+            },
+            "account_holder_name": {
+              "type": "string"
+            },
+            "account_type": {
+              "type": "string"
+            },
+            "account_holder_type": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "default_currency": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "dob": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "contact_number": {
+              "type": "string"
+            },
+            "email_address": {
+              "type": "string"
+            },
+            "is_active": {
+              "type": "boolean"
+            },
+            "total_balance": {
+              "type": "integer"
+            },
+            "created_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "account_number",
+            "account_holder_name",
+            "account_type",
+            "account_holder_type",
+            "country",
+            "default_currency",
+            "gender",
+            "dob",
+            "address",
+            "contact_number",
+            "email_address",
+            "is_active",
+            "total_balance",
+            "created_at"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "timestamp",
+    "status",
+    "message",
+    "data"
+  ]
+}
