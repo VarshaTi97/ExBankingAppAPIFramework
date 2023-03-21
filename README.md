@@ -1,6 +1,12 @@
 # ExBankingAppAPIFramework
 This project contains automation of mock API using Java Restassured library
 
+
+Programming language: Java
+Automation library: Restassurred
+Build tool: maven
+test framework: testng
+
 Folder Structure Explaination:
 
 1. src/main/java/base : It contains the core restassured engine which will execute different HTTP calls.
