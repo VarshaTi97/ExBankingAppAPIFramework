@@ -2,9 +2,12 @@
 This project contains automation of mock API using Java Restassured library
 
 
-Programming language: Java \n
+Programming language: Java
+
 Automation library: Restassurred
+
 Build tool: maven
+
 test framework: testng
 
 Folder Structure Explaination:
