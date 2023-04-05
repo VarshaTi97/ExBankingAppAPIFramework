@@ -1,0 +1,1635 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \{\
+	"info": \{\
+		"_postman_id": "78821b99-cb85-49cd-9b6b-88d2179c86d6",\
+		"name": "Ex Banking Application",\
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",\
+		"_exporter_id": "10520831"\
+	\},\
+	"item": [\
+		\{\
+			"name": "Accounts",\
+			"item": [\
+				\{\
+					"name": "Verify_UserCreationTest_With_Valid_User_Data",\
+					"event": [\
+						\{\
+							"listen": "prerequest",\
+							"script": \{\
+								"exec": [\
+									"",\
+									"const bank_id = pm.collectionVariables.get(\\"Bank_id\\");",\
+									"const val = pm.variables.replaceIn('\{\{$randomInt\}\}');",\
+									"pm.collectionVariables.set(\\"id\\", bank_id+val);",\
+									"pm.collectionVariables.set(\\"empty_name\\",null)"\
+								],\
+								"type": "text/javascript"\
+							\}\
+						\}\
+					],\
+					"request": \{\
+						"method": "POST",\
+						"header": [\
+							\{\
+								"key": "x-mock-match-request-body",\
+								"value": "true",\
+								"type": "text",\
+								"disabled": true\
+							\},\
+							\{\
+								"key": "x-mock-response-code",\
+								"value": "400",\
+								"type": "text",\
+								"disabled": true\
+							\},\
+							\{\
+								"key": "Content-Type",\
+								"value": "application/javascript",\
+								"type": "text",\
+								"disabled": true\
+							\},\
+							\{\
+								"key": "If-Match",\
+								"value": "application/vnd.api+json",\
+								"type": "text",\
+								"disabled": true\
+							\}\
+						],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{$randomFullName\}\}\\",\\n    \\"account_type\\": \\"savings\\",\\n    \\"account_holder_type\\": \\"adult\\",\\n    \\"country\\": \\"India\\",\\n    \\"default_currency\\": \\"Rupees\\",\\n    \\"gender\\": \\"Female\\",\\n    \\"dob\\": \\"01-08-03\\",\\n    \\"address\\": \\"\{\{$randomStreetAddress\}\}\\",\\n    \\"contact_number\\": \\"\{\{$randomPhoneNumber\}\}\\",\\n    \\"email_address\\": \\"\{\{$randomEmail\}\}\\",\\n    \\"is_active\\": true,\\n    \\"total_balance\\": 0,\\n    \\"created_at\\": \\"\{\{$isoTimestamp\}\}\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Valid Account Data Example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\},\
+									\{\
+										"key": "x-mock-match-request-headers",\
+										"value": "true",\
+										"type": "text",\
+										"disabled": true\
+									\},\
+									\{\
+										"key": "",\
+										"value": "",\
+										"type": "text",\
+										"disabled": true\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{$randomFullName\}\}\\",\\n    \\"account_type\\": \\"savings\\",\\n    \\"account_holder_type\\": \\"adult\\",\\n    \\"country\\": \\"India\\",\\n    \\"default_currency\\": \\"Rupees\\",\\n    \\"gender\\": \\"Female\\",\\n    \\"dob\\": \\"01-08-03\\",\\n    \\"address\\": \\"\{\{$randomStreetAddress\}\}\\",\\n    \\"contact_number\\": \\"\{\{$randomPhoneNumber\}\}\\",\\n    \\"email_address\\": \\"\{\{$randomEmail\}\}\\",\\n    \\"is_active\\": true,\\n    \\"total_balance\\": 0,\\n    \\"created_at\\": \\"\{\{$isoTimestamp\}\}\\"\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									]\
+								\}\
+							\},\
+							"status": "Created",\
+							"code": 201,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Success\\",\\n    \\"message\\": \\"User created successfully\\",\\n    \\"content\\": \{\\n        \\"account_number\\": \\"\{\{$body 'account_number'\}\}\\",\\n        \\"account_holder_name\\": \\"\{\{$body 'account_holder_name'\}\}\\",\\n        \\"is_active\\": \\"\{\{$body 'is_active'\}\}\\",\\n        \\"total_balance\\": \\"\{\{$body 'total_balance'\}\}\\",\\n        \\"account_holder_type\\": \\"\{\{$body 'account_holder_type'\}\}\\",\\n        \\"dob\\": \\"\{\{$body 'dob'\}\}\\",\\n        \\"country\\": \\"\{\{$body 'country'\}\}\\",\\n        \\"default_currency\\": \\"\{\{$body 'default_currency'\}\}\\",\\n        \\"gender\\": \\"\{\{$body 'gender'\}\}\\"\\n    \}\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_UserCreationTest_With_Multiple_Invalid_Payload_Format",\
+					"request": \{\
+						"method": "POST",\
+						"header": [\
+							\{\
+								"key": "x-mock-response-code",\
+								"value": "400",\
+								"type": "text"\
+							\}\
+						],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\\",\\n    \\"account_holder_name\\": 123,\\n    \\"account_type\\": \\"savings\\",\\n    \\"account_holder_type\\": \\"adult\\",\\n    \\"country\\": \\"India\\",\\n    \\"default_currency\\": \\"Rupees\\",\\n    \\"gender\\": \\"Male\\",\\n    \\"dob\\": \\"01-08-03\\",\\n    \\"address\\": \\"jbp, India\\",\\n    \\"contact_number\\": \\"+919644321244\\",\\n    \\"email_address\\": \\"aditya@gmail.com\\",\\n    \\"is_active\\": true,\\n    \\"total_balance\\": -123,\\n    \\"created_at\\": \\"\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Invalid account data example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\\",\\n    \\"account_holder_name\\": 123,\\n    \\"account_type\\": \\"savings\\",\\n    \\"account_holder_type\\": \\"adult\\",\\n    \\"country\\": \\"India\\",\\n    \\"default_currency\\": \\"Rupees\\",\\n    \\"gender\\": \\"Male\\",\\n    \\"dob\\": \\"01-08-03\\",\\n    \\"address\\": \\"jbp, India\\",\\n    \\"contact_number\\": \\"+919644321244\\",\\n    \\"email_address\\": \\"aditya@gmail.com\\",\\n    \\"is_active\\": true,\\n    \\"total_balance\\": -123,\\n    \\"created_at\\": \\"\\"",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									]\
+								\}\
+							\},\
+							"status": "Bad Request",\
+							"code": 400,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Account number cannot be empty.\\"\\n        \},\\n        \{\\n            \\"message\\": \\"Account holder name should not be an integer.\\"\\n        \},\\n        \{\\n            \\"message\\": \\"Account balance cannot be negative.\\"\\n        \},\\n        \{\\n            \\"message\\": \\"creation time cannot be empty.\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_GetUserDetailsTest_For_All_Users",\
+					"protocolProfileBehavior": \{\
+						"disabledSystemHeaders": \{\
+							"accept": true\
+						\}\
+					\},\
+					"request": \{\
+						"method": "GET",\
+						"header": [\
+							\{\
+								"key": "Accept",\
+								"value": "application/json",\
+								"type": "text"\
+							\}\
+						],\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Get All Users Accounts Details Example",\
+							"originalRequest": \{\
+								"method": "GET",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\},\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									]\
+								\}\
+							\},\
+							"status": "OK",\
+							"code": 200,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"timestamp\\": \\"\{\{$isoTimestamp\}\}\\",\\n    \\"status\\": 200,\\n    \\"message\\": \\"Users list fetched successfully\\",\\n    \\"count\\": 3,\\n    \\"data\\":[\\n                \{\\n                    \\"account_number\\": \\"SBI191\\",\\n                    \\"account_holder_name\\": \\"Jonathan Reddy\\",\\n                    \\"account_type\\": \\"loan\\",\\n                    \\"account_holder_type\\": \\"adult\\",\\n                    \\"country\\": \\"US\\",\\n                    \\"default_currency\\": \\"Dollars\\",\\n                    \\"gender\\": \\"Male\\",\\n                    \\"dob\\": \\"10-01-69\\",\\n                    \\"address\\": \\"Nashville\\",\\n                    \\"contact_number\\": \\"+12344565656\\",\\n                    \\"email_address\\": \\"Jonathan@gmail.com\\",\\n                    \\"is_active\\": true,\\n                    \\"total_balance\\": 1000,\\n                    \\"created_at\\": \\"\{\{$isoTimestamp\}\}\\"\\n                \},\\n                \{\\n                    \\"account_number\\": \\"SBI230\\",\\n                    \\"account_holder_name\\": \\"Suman Bong\\",\\n                    \\"account_type\\": \\"savings\\",\\n                    \\"account_holder_type\\": \\"adult\\",\\n                    \\"country\\": \\"India\\",\\n                    \\"default_currency\\": \\"Rupees\\",\\n                    \\"gender\\": \\"Female\\",\\n                    \\"dob\\": \\"01-08-03\\",\\n                    \\"address\\": \\"jbp, India\\",\\n                    \\"contact_number\\": \\"+919644321244\\",\\n                    \\"email_address\\": \\"suman@gmail.com\\",\\n                    \\"is_active\\": true,\\n                    \\"total_balance\\": 120000,\\n                    \\"created_at\\": \\"\{\{$isoTimestamp\}\}\\"\\n                \},\\n                \{\\n                    \\"account_number\\": \\"SBI436\\",\\n                    \\"account_holder_name\\": \\"Carima Hourie\\",\\n                    \\"account_type\\": \\"savings\\",\\n                    \\"account_holder_type\\": \\"minor\\",\\n                    \\"country\\": \\"India\\",\\n                    \\"default_currency\\": \\"Rupees\\",\\n                    \\"gender\\": \\"Male\\",\\n                    \\"dob\\": \\"15-03-2015\\",\\n                    \\"address\\": \\"jbp, India\\",\\n                    \\"contact_number\\": \\"+919644321244\\",\\n                    \\"email_address\\": \\"Carima@gmail.com\\",\\n                    \\"is_active\\": true,\\n                    \\"total_balance\\": 9000,\\n                    \\"created_at\\": \\"\{\{$isoTimestamp\}\}\\"\\n                \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_GetUserDetailsTest_For_Specific_Users",\
+					"request": \{\
+						"method": "GET",\
+						"header": [],\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts?account_number=\\"\{\{valid_account_id\}\}\\"&account_holder_name=\\"\{\{valid_account_holder_name\}\}\\"",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts"\
+							],\
+							"query": [\
+								\{\
+									"key": "account_number",\
+									"value": "\\"\{\{valid_account_id\}\}\\""\
+								\},\
+								\{\
+									"key": "account_holder_name",\
+									"value": "\\"\{\{valid_account_holder_name\}\}\\""\
+								\}\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Get details with valid account number",\
+							"originalRequest": \{\
+								"method": "GET",\
+								"header": [\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts?account_number=\\"\{\{valid_account_id\}\}\\"",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									],\
+									"query": [\
+										\{\
+											"key": "account_number",\
+											"value": "\\"\{\{valid_account_id\}\}\\""\
+										\}\
+									]\
+								\}\
+							\},\
+							"status": "OK",\
+							"code": 200,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"timestamp\\": \\"\{\{$isoTimestamp\}\}\\",\\n    \\"status\\": 200,\\n    \\"message\\": \\"Users list fetched successfully\\",\\n    \\"data\\":[\\n                \{\\n                    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n                    \\"account_holder_name\\": \\"Jonathan Reddy\\",\\n                    \\"account_type\\": \\"loan\\",\\n                    \\"account_holder_type\\": \\"adult\\",\\n                    \\"country\\": \\"US\\",\\n                    \\"default_currency\\": \\"Dollars\\",\\n                    \\"gender\\": \\"Male\\",\\n                    \\"dob\\": \\"10-01-69\\",\\n                    \\"address\\": \\"Nashville\\",\\n                    \\"contact_number\\": \\"+12344565656\\",\\n                    \\"email_address\\": \\"Jonathan@gmail.com\\",\\n                    \\"is_active\\": true,\\n                    \\"total_balance\\": 1000,\\n                    \\"created_at\\": \\"\{\{$isoTimestamp\}\}\\"\\n                \}\\n    ]\\n\}"\
+						\},\
+						\{\
+							"name": "Get details with empty account number",\
+							"originalRequest": \{\
+								"method": "GET",\
+								"header": [\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts?account_number=\\"\\"",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									],\
+									"query": [\
+										\{\
+											"key": "account_number",\
+											"value": "\\"\\""\
+										\}\
+									]\
+								\}\
+							\},\
+							"status": "Bad Request",\
+							"code": 400,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Not a valid account number.\\"\\n        \}\\n    ]\\n\}"\
+						\},\
+						\{\
+							"name": "Get details with invalid account number",\
+							"originalRequest": \{\
+								"method": "GET",\
+								"header": [\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts?account_number=\\"\{\{invalid_account_id\}\}\\"",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									],\
+									"query": [\
+										\{\
+											"key": "account_number",\
+											"value": "\\"\{\{invalid_account_id\}\}\\""\
+										\}\
+									]\
+								\}\
+							\},\
+							"status": "Not Found",\
+							"code": 404,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Account details not found\\"\\n        \}\\n    ]\\n\}"\
+						\},\
+						\{\
+							"name": "Verify_GetUserDetailsTest_For_Specific_Users",\
+							"originalRequest": \{\
+								"method": "GET",\
+								"header": [\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts?account_number=\\"\{\{valid_account_id\}\}\\"&account_holder_name=\\"\{\{valid_account_holder_name\}\}\\"",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									],\
+									"query": [\
+										\{\
+											"key": "account_number",\
+											"value": "\\"\{\{valid_account_id\}\}\\""\
+										\},\
+										\{\
+											"key": "account_holder_name",\
+											"value": "\\"\{\{valid_account_holder_name\}\}\\""\
+										\}\
+									]\
+								\}\
+							\},\
+							"status": "OK",\
+							"code": 200,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"timestamp\\": \\"\{\{$isoTimestamp\}\}\\",\\n    \\"status\\": 200,\\n    \\"message\\": \\"Users list fetched successfully\\",\\n    \\"data\\":[\\n                \{\\n                    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n                    \\"account_holder_name\\": \\"\{\{valid_account_holder_name\}\}\\",\\n                    \\"account_type\\": \\"loan\\",\\n                    \\"account_holder_type\\": \\"adult\\",\\n                    \\"country\\": \\"US\\",\\n                    \\"default_currency\\": \\"Dollars\\",\\n                    \\"gender\\": \\"Male\\",\\n                    \\"dob\\": \\"10-01-69\\",\\n                    \\"address\\": \\"Nashville\\",\\n                    \\"contact_number\\": \\"+12344565656\\",\\n                    \\"email_address\\": \\"Jonathan@gmail.com\\",\\n                    \\"is_active\\": true,\\n                    \\"total_balance\\": 1000,\\n                    \\"created_at\\": \\"\{\{$isoTimestamp\}\}\\"\\n                \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_GetUserDetailsTest_Get_Account_Balance",\
+					"event": [\
+						\{\
+							"listen": "prerequest",\
+							"script": \{\
+								"exec": [\
+									""\
+								],\
+								"type": "text/javascript"\
+							\}\
+						\}\
+					],\
+					"protocolProfileBehavior": \{\
+						"disabledSystemHeaders": \{\
+							"accept": true\
+						\}\
+					\},\
+					"request": \{\
+						"method": "GET",\
+						"header": [\
+							\{\
+								"key": "Accept",\
+								"value": "application/json",\
+								"type": "text"\
+							\}\
+						],\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{invalid_account_id\}\}/total_balance",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{invalid_account_id\}\}",\
+								"total_balance"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Verify_GetUserDetailsTest_Get_Account_Balance",\
+							"originalRequest": \{\
+								"method": "GET",\
+								"header": [\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{valid_account_id\}\}/total_balance",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{valid_account_id\}\}",\
+										"total_balance"\
+									]\
+								\}\
+							\},\
+							"status": "OK",\
+							"code": 200,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "[\\n    \{\\n        \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n        \\"total_balance\\": 1000\\n    \}\\n]"\
+						\},\
+						\{\
+							"name": "Verify_GetUserDetailsTest_Get_Account_Balance_Invalid_User",\
+							"originalRequest": \{\
+								"method": "GET",\
+								"header": [\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{invalid_account_id\}\}/total_balance",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{invalid_account_id\}\}",\
+										"total_balance"\
+									]\
+								\}\
+							\},\
+							"status": "Not Found",\
+							"code": 404,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Account details not found\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_UserCreationTest_Update_Partial_User_Data",\
+					"request": \{\
+						"method": "PATCH",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{$randomFullName\}\}\\",\\n    \\"account_type\\": \\"salary\\",\\n    \\"address\\": \\"\{\{$randomStreetAddress\}\}\\",\\n    \\"contact_number\\": \\"\{\{$randomPhoneNumber\}\}\\",\\n    \\"email_address\\": \\"\{\{$randomEmail\}\}\\",\\n    \\"is_active\\": false\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "partial update of data example",\
+							"originalRequest": \{\
+								"method": "PATCH",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{$randomFullName\}\}\\",\\n    \\"account_type\\": \\"salary\\",\\n    \\"address\\": \\"\{\{$randomStreetAddress\}\}\\",\\n    \\"contact_number\\": \\"\{\{$randomPhoneNumber\}\}\\",\\n    \\"email_address\\": \\"\{\{$randomEmail\}\}\\",\\n    \\"is_active\\": false\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									]\
+								\}\
+							\},\
+							"status": "No Content",\
+							"code": 204,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": ""\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_UserCreationTest_Delete_",\
+					"request": \{\
+						"method": "DELETE",\
+						"header": [],\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts?account_number=\{\{deletion_account_id\}\}",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts"\
+							],\
+							"query": [\
+								\{\
+									"key": "account_number",\
+									"value": "\{\{deletion_account_id\}\}"\
+								\}\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Verify_UserCreationTest_Delete_",\
+							"originalRequest": \{\
+								"method": "DELETE",\
+								"header": [],\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts?account_number=\{\{deletion_account_id\}\}",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts"\
+									],\
+									"query": [\
+										\{\
+											"key": "account_number",\
+											"value": "\{\{deletion_account_id\}\}"\
+										\}\
+									]\
+								\}\
+							\},\
+							"status": "OK",\
+							"code": 200,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"success\\",\\n    \\"message\\": \\"\{\{$queryParams 'account_number'\}\} deleted successfully.\\"\\n\}"\
+						\}\
+					]\
+				\}\
+			]\
+		\},\
+		\{\
+			"name": "Deposit",\
+			"item": [\
+				\{\
+					"name": "Verify_DepositTest_Add_Amount_to_Valid_Account",\
+					"protocolProfileBehavior": \{\
+						"disabledSystemHeaders": \{\
+							"accept": true\
+						\}\
+					\},\
+					"request": \{\
+						"method": "POST",\
+						"header": [\
+							\{\
+								"key": "Accept",\
+								"value": "application/json",\
+								"type": "text"\
+							\},\
+							\{\
+								"key": "x-mock-match-request-body",\
+								"value": "true",\
+								"type": "text"\
+							\}\
+						],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"varsha tiwari\\",\\n    \\"amount_to_deposit\\": 5000,\\n    \\"mode_of_transfer\\": \\"net banking\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{valid_account_id\}\}/deposit",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{valid_account_id\}\}",\
+								"deposit"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Add money to valid account Example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\},\
+									\{\
+										"key": "Accept",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"varsha tiwari\\",\\n    \\"amount_to_deposit\\": 5000,\\n    \\"mode_of_transfer\\": \\"net banking\\"\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{valid_account_id\}\}/deposit",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{valid_account_id\}\}",\
+										"deposit"\
+									]\
+								\}\
+							\},\
+							"status": "Created",\
+							"code": 201,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Success\\",\\n    \\"message\\": \\"Account \{\{$body 'account_number'\}\} credited by \{\{$body 'amount_to_deposit'\}\} at time:\{\{$isoTimestamp\}\}\\"\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_DepositTest_Add_Amount_to_InValid_Account",\
+					"request": \{\
+						"method": "POST",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{invalid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"test user\\",\\n    \\"amount_to_deposit\\": 5000,\\n    \\"mode_of_transfer\\": \\"NEFT\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{invalid_account_id\}\}/deposit",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{invalid_account_id\}\}",\
+								"deposit"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Add money to invalid account example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{invalid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"test user\\",\\n    \\"amount_to_deposit\\": 5000,\\n    \\"mode_of_transfer\\": \\"NEFT\\"\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{invalid_account_id\}\}/deposit",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{invalid_account_id\}\}",\
+										"deposit"\
+									]\
+								\}\
+							\},\
+							"status": "Not Found",\
+							"code": 404,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Account details not found\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_DepositTest_Add_Invalid_Amount",\
+					"request": \{\
+						"method": "POST",\
+						"header": [\
+							\{\
+								"key": "x-mock-match-request-body",\
+								"value": "true",\
+								"type": "text"\
+							\}\
+						],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{receiver_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"Rober Kiyosaki\\",\\n    \\"amount_to_deposit\\": -500,\\n    \\"mode_of_transfer\\": \\"RTGS\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{receiver_account_id\}\}/deposit",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{receiver_account_id\}\}",\
+								"deposit"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Add invalid money to account example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{receiver_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"Rober Kiyosaki\\",\\n    \\"amount_to_deposit\\": -500,\\n    \\"mode_of_transfer\\": \\"RTGS\\"\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{receiver_account_id\}\}/deposit",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{receiver_account_id\}\}",\
+										"deposit"\
+									]\
+								\}\
+							\},\
+							"status": "Bad Request",\
+							"code": 400,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Invalid amount to be credited.\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\}\
+			]\
+		\},\
+		\{\
+			"name": "Send",\
+			"item": [\
+				\{\
+					"name": "Verify_TransferAmountTest_Send_Money_To_Valid_Account",\
+					"request": \{\
+						"method": "POST",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"transfer_account_number\\": \\"\{\{receiver_account_id\}\}\\",\\n    \\"transfer_account_holder_name\\": \\"\{\{receiver_account_holder_name\}\}\\",\\n    \\"amount_to_transfer\\": 5000,\\n    \\"mode_of_transfer\\": \\"net banking\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/transfer/\{\{receiver_account_id\}\}",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{transfer_account_id\}\}",\
+								"transfer",\
+								"\{\{receiver_account_id\}\}"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "transfer money to valid account",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"transfer_account_number\\": \\"\{\{receiver_account_id\}\}\\",\\n    \\"transfer_account_holder_name\\": \\"\{\{receiver_account_holder_name\}\}\\",\\n    \\"amount_to_transfer\\": 5000,\\n    \\"mode_of_transfer\\": \\"net banking\\"\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/transfer/\{\{receiver_account_id\}\}",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{transfer_account_id\}\}",\
+										"transfer",\
+										"\{\{receiver_account_id\}\}"\
+									]\
+								\}\
+							\},\
+							"status": "OK",\
+							"code": 200,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Success\\",\\n    \\"message\\": \\"Account \{\{$body 'transfer_account_id'\}\} is debited for \{\{$body 'amount_to_transfer'\}\}  at time:\{\{$isoTimestamp\}\}\\"\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_TransferAmountTest_Send_Money_To_Invalid_Account",\
+					"request": \{\
+						"method": "POST",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"transfer_account_number\\": \\"\{\{invalid_account_id\}\}\\",\\n    \\"transfer_account_holder_name\\": \\"\{\{invalid_account_holder_name\}\}\\",\\n    \\"amount_to_transfer\\": 5000,\\n    \\"mode_of_transfer\\": \\"net banking\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/transfer/\{\{invalid_account_id\}\}",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{transfer_account_id\}\}",\
+								"transfer",\
+								"\{\{invalid_account_id\}\}"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "transfer amount to invalid account example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"transfer_account_number\\": \\"\{\{invalid_account_id\}\}\\",\\n    \\"transfer_account_holder_name\\": \\"\{\{invalid_account_holder_name\}\}\\",\\n    \\"amount_to_transfer\\": 5000,\\n    \\"mode_of_transfer\\": \\"net banking\\"\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/transfer/\{\{invalid_account_id\}\}",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{transfer_account_id\}\}",\
+										"transfer",\
+										"\{\{invalid_account_id\}\}"\
+									]\
+								\}\
+							\},\
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",\
+							"code": 422,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Transfer account details are not correct. Please validate.\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_TransferAmountTest_Send_Invalid_Amount",\
+					"request": \{\
+						"method": "POST",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"transfer_account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"transfer_account_holder_name\\": \\"\{\{valid_account_holder_name\}\}\\",\\n    \\"amount_to_transfer\\": \{\{invalid_transfer_amount\}\},\\n    \\"mode_of_transfer\\": \\"NEFT\\"\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/transfer/\{\{valid_account_id\}\}",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{transfer_account_id\}\}",\
+								"transfer",\
+								"\{\{valid_account_id\}\}"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Transfer money greater than account balance",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"transfer_account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"transfer_account_holder_name\\": \\"\{\{valid_account_holder_name\}\}\\",\\n    \\"amount_to_transfer\\": \{\{invalid_transfer_amount\}\},\\n    \\"mode_of_transfer\\": \\"NEFT\\"\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/transfer/\{\{valid_account_id\}\}",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{transfer_account_id\}\}",\
+										"transfer",\
+										"\{\{valid_account_id\}\}"\
+									]\
+								\}\
+							\},\
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",\
+							"code": 422,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Insufficient balance.\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\}\
+			]\
+		\},\
+		\{\
+			"name": "Withdraw",\
+			"item": [\
+				\{\
+					"name": "Verify_WithdrawTest_Withdraw_Valid_Amount_From_Valid_Account",\
+					"request": \{\
+						"method": "POST",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{valid_account_holder_name\}\}\\",\\n    \\"amount_to_withdraw\\": \{\{valid_transfer_amount\}\}\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{valid_account_id\}\}/withdraw",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{valid_account_id\}\}",\
+								"withdraw"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Withdraw money less than available balance from valid account example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{valid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{valid_account_holder_name\}\}\\",\\n    \\"amount_to_withdraw\\": \{\{valid_transfer_amount\}\}\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{valid_account_id\}\}/withdraw",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{valid_account_id\}\}",\
+										"withdraw"\
+									]\
+								\}\
+							\},\
+							"status": "OK",\
+							"code": 200,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Success\\",\\n    \\"message\\": \\"Account \{\{$body 'account_number'\}\} withdrawn by \{\{$body 'amount_to_withdraw'\}\} at time:\{\{$isoTimestamp\}\}\\"\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_WithdrawTest_Withdraw_Invalid_Amount_From_Valid_Account",\
+					"request": \{\
+						"method": "POST",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"amount_to_withdraw\\": \{\{invalid_transfer_amount\}\}\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/withdraw",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{transfer_account_id\}\}",\
+								"withdraw"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Withdraw money grater than available example",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"name": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{transfer_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{transfer_account_holder_name\}\}\\",\\n    \\"amount_to_withdraw\\": \{\{invalid_transfer_amount\}\}\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{transfer_account_id\}\}/withdraw",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{transfer_account_id\}\}",\
+										"withdraw"\
+									]\
+								\}\
+							\},\
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",\
+							"code": 422,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Insufficient Account Balance.\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\},\
+				\{\
+					"name": "Verify_WithdrawTest_Withdraw_From_Invalid_Account",\
+					"request": \{\
+						"method": "POST",\
+						"header": [],\
+						"body": \{\
+							"mode": "raw",\
+							"raw": "\{\\n    \\"account_number\\": \\"\{\{invalid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{invalid_account_holder_name\}\}\\",\\n    \\"amount_to_withdraw\\": \{\{valid_transfer_amount\}\}\\n\}",\
+							"options": \{\
+								"raw": \{\
+									"language": "json"\
+								\}\
+							\}\
+						\},\
+						"url": \{\
+							"raw": "\{\{url\}\}/v1/accounts/\{\{invalid_account_id\}\}/withdraw",\
+							"host": [\
+								"\{\{url\}\}"\
+							],\
+							"path": [\
+								"v1",\
+								"accounts",\
+								"\{\{invalid_account_id\}\}",\
+								"withdraw"\
+							]\
+						\}\
+					\},\
+					"response": [\
+						\{\
+							"name": "Withdraw money from invalid account",\
+							"originalRequest": \{\
+								"method": "POST",\
+								"header": [\
+									\{\
+										"key": "Content-Type",\
+										"value": "application/json",\
+										"type": "text"\
+									\}\
+								],\
+								"body": \{\
+									"mode": "raw",\
+									"raw": "\{\\n    \\"account_number\\": \\"\{\{invalid_account_id\}\}\\",\\n    \\"account_holder_name\\": \\"\{\{invalid_account_holder_name\}\}\\",\\n    \\"amount_to_withdraw\\": \{\{valid_transfer_amount\}\}\\n\}",\
+									"options": \{\
+										"raw": \{\
+											"language": "json"\
+										\}\
+									\}\
+								\},\
+								"url": \{\
+									"raw": "\{\{url\}\}/v1/accounts/\{\{invalid_account_id\}\}/withdraw",\
+									"host": [\
+										"\{\{url\}\}"\
+									],\
+									"path": [\
+										"v1",\
+										"accounts",\
+										"\{\{invalid_account_id\}\}",\
+										"withdraw"\
+									]\
+								\}\
+							\},\
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",\
+							"code": 422,\
+							"_postman_previewlanguage": "json",\
+							"header": [\
+								\{\
+									"key": "Content-Type",\
+									"value": "application/json",\
+									"name": "Content-Type",\
+									"description": "",\
+									"type": "text"\
+								\}\
+							],\
+							"cookie": [],\
+							"body": "\{\\n    \\"status\\": \\"Failure\\",\\n    \\"errors\\": [\\n        \{\\n            \\"message\\": \\"Account details not found.\\"\\n        \}\\n    ]\\n\}"\
+						\}\
+					]\
+				\}\
+			]\
+		\}\
+	],\
+	"event": [\
+		\{\
+			"listen": "prerequest",\
+			"script": \{\
+				"type": "text/javascript",\
+				"exec": [\
+					""\
+				]\
+			\}\
+		\},\
+		\{\
+			"listen": "test",\
+			"script": \{\
+				"type": "text/javascript",\
+				"exec": [\
+					""\
+				]\
+			\}\
+		\}\
+	],\
+	"variable": [\
+		\{\
+			"key": "Bank_id",\
+			"value": "SBI",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "invalid_account_id",\
+			"value": "SBI987",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "valid_account_holder_name",\
+			"value": "Jonathan Reddy",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "empty_name",\
+			"value": ""\
+		\},\
+		\{\
+			"key": "id",\
+			"value": "SBI524",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "valid_account_id",\
+			"value": "SBI191",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "deletion_account_id",\
+			"value": "SBI436",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "transfer_account_id",\
+			"value": "SBI123",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "receiver_account_id",\
+			"value": "SBI990",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "receiver_account_holder_name",\
+			"value": "John ankins",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "transfer_account_balance",\
+			"value": "20000",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "transfer_account_holder_name",\
+			"value": "paul hawkins",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "invalid_account_holder_name",\
+			"value": "Ross Paul",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "valid_transfer_amount",\
+			"value": "5000",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "invalid_transfer_amount",\
+			"value": "30000",\
+			"type": "string"\
+		\},\
+		\{\
+			"key": "invalid_amount",\
+			"value": "-100",\
+			"type": "string"\
+		\}\
+	]\
+\}\
+}
