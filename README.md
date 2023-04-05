@@ -40,5 +40,6 @@ test framework: `testng`
 
 ## How to execute the testcases? 
 
-1. open terminal and type `mvn test`
-2. right click on file `testng.xml --> run testng.xml`
+1. Import the postman collection file get the new url and replace the base url with in the excel sheet at location. (src/test/resources/testCaseSheet/ExBankingAppTestcases.xlsx)
+2. open terminal and type `mvn clean compile test`
+3. right click on file `testng.xml --> run testng.xml`
