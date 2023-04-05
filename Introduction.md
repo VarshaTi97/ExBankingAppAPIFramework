@@ -26,9 +26,11 @@ Manual Test Cases: They are written inside the excel sheet and the automation fr
 
 
 Automation Framework:
+```
 	Programming language: Java
 	Testing framework: Testng
 	API automation library: RestAssured
 	Build Tool: Maven
 	Design Patterns: Singleton , POM(page object model)
+```
 
