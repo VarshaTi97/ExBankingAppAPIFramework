@@ -22,8 +22,7 @@ https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io
       /v1/accounts/{{valid_account_id}}/withdraw
 
 
-Manual Test Cases: They are written inside the excel sheet and the automation framework is also using the same excel sheet to execute the test cases.
-
+Manual Test Cases: They are present inside ExBankingAppTestcases.xlsx file.
 
 Automation Framework:
 ```
