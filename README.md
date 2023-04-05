@@ -1,4 +1,4 @@
-## ExBankingAppAPIFramework ##
+## ExBankingAppAPIFramework 
 This project contains automation of mock API using Java Restassured library
 
 
@@ -10,7 +10,7 @@ Build tool: `maven`
 
 test framework: `testng`
 
-* Folder Structure Explaination: *
+## Folder Structure Explaination: 
 
 1. src/main/java/base : It contains the core restassured engine which will execute different HTTP calls.
 
@@ -38,7 +38,7 @@ test framework: `testng`
 
 
 
-* How to execute the testcases? *
+## How to execute the testcases? 
 
 1. open terminal and type `mvn test`
 2. right click on file `testng.xml --> run testng.xml`
