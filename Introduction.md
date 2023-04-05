@@ -7,6 +7,9 @@ ExBanking application is developed using the mocking service provided by postman
 `Base URL: `
 https://dd071f0e-808e-4709-b7f1-f1edd7c8a4e1.mock.pstmn.io
 
+`Postman Collection File:`
+	Ex Banking Application.postman_collection.json
+	
  `Account Folder:` It has mocks related to the User creation and retrieving user data
       /v1/accounts
       /v1/accounts?account_number="{{account_id}}"
