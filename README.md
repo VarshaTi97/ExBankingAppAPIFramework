@@ -1,5 +1,5 @@
 ## ExBankingAppAPIFramework 
-This project contains automation of mock API using Java Restassured library
+This project contains automation of mock API using Java Restassured library. Please go trough Introduction.md as well.
 
 
 Programming language: `Java`
