@@ -1,16 +1,16 @@
-# ExBankingAppAPIFramework
+## ExBankingAppAPIFramework##
 This project contains automation of mock API using Java Restassured library
 
 
-Programming language: Java
+Programming language: `Java`
 
-Automation library: Restassurred
+Automation library: `Restassurred`
 
-Build tool: maven
+Build tool: `maven`
 
-test framework: testng
+test framework: `testng`
 
-Folder Structure Explaination:
+#Folder Structure Explaination:#
 
 1. src/main/java/base : It contains the core restassured engine which will execute different HTTP calls.
 
@@ -30,7 +30,7 @@ Folder Structure Explaination:
 
 
 
-Execution report: Explicit test reporting is not yet implemented, default reports generated are places at below location.
+`Execution report`: Explicit test reporting is not yet implemented, default reports generated are places at below location.
                   target/surefire-reports/emailable-report.html
 
 
@@ -38,7 +38,7 @@ Execution report: Explicit test reporting is not yet implemented, default report
 
 
 
-How to execute the testcases?
+#How to execute the testcases?#
 
-1. open terminal and type mvn test
-2. right click on file testng.xml --> run testng.xml
+1. open terminal and type `mvn test`
+2. right click on file `testng.xml --> run testng.xml`
